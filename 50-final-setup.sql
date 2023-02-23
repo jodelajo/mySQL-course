@@ -36,7 +36,7 @@ CREATE TABLE intranet_accounts (
     email VARCHAR(200) REFERENCES employees (email) ON DELETE CASCADE,
     password VARCHAR(200) NOT NULL
 );
-
+-- Intermediate table
 CREATE TABLE projects_employees (
     id SERIAL PRIMARY KEY,
     employee_id INT,
